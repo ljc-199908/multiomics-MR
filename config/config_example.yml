@@ -1,0 +1,40 @@
+# ====== REQUIRED: user must edit ======
+opengwas_jwt: "PLEASE_SET_YOUR_OPENGWAS_JWT"
+
+# exposure inputs (choose one or multiple)
+exposure_files:
+  pqtl: "PATH/TO/cis_pqtl.tsv.gz"
+  eqtl: "PATH/TO/cis_eqtl.tsv.gz"
+
+# outcome sources
+outcome_ids_primary:
+  - "ebi-a-GCST90018790"   # placeholder
+outcome_ids_replication:
+  - "finngen_Rx_xxx"       # placeholder
+
+# LD clumping
+plink_bin: "PATH/TO/plink"
+ld_ref_bfile: "PATH/TO/1000G_EUR"  # prefix, no extension
+clump_r2: 0.001
+clump_kb: 10000
+p_threshold: 5.0e-8
+cis_window_kb: 1000
+exclude_mhc: true
+
+# filtering / QC
+min_F: 10
+remove_palindromic_ambiguous: true
+phenoscanner_p: 1.0e-5
+
+# coloc
+coloc_window_bp: 1000000
+coloc_priors:
+  p1: 1.0e-4
+  p2: 1.0e-4
+  p12: 1.0e-5
+coloc_pph4_strong: 0.8
+coloc_pph4_moderate: 0.5
+
+# outputs
+outdir: "outputs/run_YYYYMMDD"
+seed: 20260204
