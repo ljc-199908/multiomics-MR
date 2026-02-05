@@ -1,0 +1,19 @@
+{
+  "R": {
+    "Version": "4.4.0"
+  },
+  "Packages": {
+    "TwoSampleMR": {
+      "Source": "GitHub",
+      "RemoteUrl": "https://github.com/MRCIEU/TwoSampleMR"
+    },
+    "ieugwasr": {
+      "Source": "GitHub",
+      "RemoteUrl": "https://github.com/mrcieu/ieugwasr"
+    },
+    "MRPRESSO": {
+      "Source": "GitHub",
+      "RemoteUrl": "https://github.com/rondolab/MR-PRESSO"
+    }
+  }
+}
