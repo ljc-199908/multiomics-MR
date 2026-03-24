@@ -1,11 +1,14 @@
-# Multi-omics MR pipeline (template skeleton)
+# Multi-omics MR pipeline
 
-This repository provides a **template** (skeleton) for a Mendelian randomization (MR) and multi-omics (eQTL/pQTL) analysis pipeline.
-It is designed for **transparency and reproducibility** of the analysis workflow supporting a manuscript, while intentionally
-**requiring users to adapt paths, identifiers, and data formats** for their own datasets.
+This repository contains the analysis pipeline supporting the study:
+
+"Systematic prioritization of potential therapeutic targets for glomerulonephritis using multi-omics Mendelian randomization".
+
+The workflow integrates Mendelian randomization (MR) with multi-omics data (eQTL/pQTL) to enable systematic prioritization of candidate therapeutic targets. The pipeline is designed to ensure transparency, reproducibility, and extensibility, and is organized in a modular structure that can be adapted to other datasets.
 
 > ⚠️ **No restricted / controlled-access data are redistributed here.**
-> Users must obtain the underlying GWAS/QTL summary statistics from the original providers and comply with their licenses/terms.
+> Users must obtain the underlying GWAS/QTL summary statistics from the original providers and comply with their licenses and terms of use.
+
 
 ## What this repo contains
 - A configurable R pipeline structure: ingestion → IV filtering → LD clumping → outcome extraction → harmonisation → MR → sensitivity → MR-PRESSO (batch) → (optional) colocalisation → reporting.
@@ -24,14 +27,23 @@ It is designed for **transparency and reproducibility** of the analysis workflow
    Rscript scripts/run_pipeline.R config/config.yml
    ```
 
-## Data availability (template language)
-The analysis uses publicly available GWAS/QTL summary statistics (e.g., OpenGWAS/FinnGen/UKB-derived resources) and study-specific derived tables.
-Because some resources have redistribution restrictions, this repository contains **code only** plus configuration templates and small toy examples.
+## Data availability
+
+The analysis uses publicly available GWAS/QTL summary statistics (e.g., OpenGWAS, FinnGen, and UK Biobank-derived resources), with detailed accession information provided in the manuscript.
+Due to redistribution restrictions, this repository provides code and configuration templates only. All harmonised datasets can be reproduced using the deposited code.
+
 
 ## Citation
+
 If you use this workflow template, please cite:
-- the corresponding manuscript (add reference here), and
-- the upstream software packages listed in `renv.lock` or the README methods section.
+
+Li G, Zeng D, Gu J, Wang Y, Liu J, Yang D.  
+Systematic prioritization of potential therapeutic targets for glomerulonephritis using multi-omics Mendelian randomization.  
+PLOS Computational Biology (under revision).
+
+Code repository DOI: https://doi.org/10.5281/zenodo.19210177
+
+In addition, please cite the upstream software packages listed in `renv.lock` or described in the Methods section.
 
 ## License
 MIT (recommended). See `LICENSE`.
