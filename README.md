@@ -35,7 +35,7 @@ Due to redistribution restrictions, this repository provides code and configurat
 
 ## Citation
 
-If you use this workflow template, please cite:
+If you use this workflow, please cite:
 
 Li G, Zeng D, Gu J, Wang Y, Liu J, Yang D.  
 Systematic prioritization of potential therapeutic targets for glomerulonephritis using multi-omics Mendelian randomization.  
