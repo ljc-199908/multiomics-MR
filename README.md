@@ -33,7 +33,7 @@ The analysis uses publicly available GWAS/QTL summary statistics (e.g., OpenGWAS
 
 Due to data redistribution restrictions, this repository provides code and configuration templates rather than full datasets. All harmonised datasets can be reproduced using the deposited code and publicly available data sources. 
 
-An example harmonised dataset (`data/example_harmonised_data.tsv`) is provided to illustrate the data structure and facilitate reproducibility.
+An example harmonised dataset (`data/example_harmonised_data.tsv`) is provided to illustrate the data structure and facilitate reproducibility. An example script (`R/example_harmonise_from_opengwas.R`) is provided to demonstrate how harmonised datasets can be generated directly from OpenGWAS using the specified dataset identifiers.
 
 ## Citation
 
