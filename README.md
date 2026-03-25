@@ -29,9 +29,11 @@ The workflow integrates Mendelian randomization (MR) with multi-omics data (eQTL
 
 ## Data availability
 
-The analysis uses publicly available GWAS/QTL summary statistics (e.g., OpenGWAS, FinnGen, and UK Biobank-derived resources), with detailed accession information provided in the manuscript.
-Due to redistribution restrictions, this repository provides code and configuration templates only. All harmonised datasets can be reproduced using the deposited code.
+The analysis uses publicly available GWAS/QTL summary statistics (e.g., OpenGWAS, FinnGen, and UK Biobank-derived resources), with detailed accession information provided in the manuscript. 
 
+Due to data redistribution restrictions, this repository provides code and configuration templates rather than full datasets. All harmonised datasets can be reproduced using the deposited code and publicly available data sources. 
+
+An example harmonised dataset (`data/example_harmonised_data.tsv`) is provided to illustrate the data structure and facilitate reproducibility.
 
 ## Citation
 
@@ -39,7 +41,7 @@ If you use this workflow, please cite:
 
 Li G, Zeng D, Gu J, Wang Y, Liu J, Yang D.  
 Systematic prioritization of potential therapeutic targets for glomerulonephritis using multi-omics Mendelian randomization.  
-PLOS Computational Biology (under revision).
+
 
 Code repository DOI: https://doi.org/10.5281/zenodo.19210177
 
